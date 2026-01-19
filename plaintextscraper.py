@@ -1,7 +1,7 @@
 import pdfplumber
 
-pdf_path = r"C:\Users\Seth Sander\OneDrive\Desktop\Textbooks\CYB 310\Practical Malware Analysis.pdf"
-output_path = r"C:\Users\Seth Sander\OneDrive\Desktop\Textbooks\CYB 310\Practical_Malware_Analysis.txt"
+pdf_path = r"C:\example.pdf"
+output_path = r"C:\example.txt"
 
 with pdfplumber.open(pdf_path) as pdf:
     with open(output_path, "w", encoding="utf-8") as f:
@@ -13,3 +13,4 @@ with pdfplumber.open(pdf_path) as pdf:
                 f.write("\n")
 
 print("Text extraction complete!")
+
